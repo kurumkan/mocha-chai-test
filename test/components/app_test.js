@@ -15,10 +15,14 @@ describe('App', ()=>{
 	it('shows the correct text', ()=>{
 		
 		//use 'expect' to make an assertion about a target
-	    expect(component).to.contain('React simple starter');
+	    expect(component).to.contain('Comments App');
 	});
 
 	it('shows a ComentBox', ()=>{
 		expect(component.find('.comment-box')).to.exist;
+	});
+
+	it('shows a ComentList', ()=>{
+		expect(component.find('.comment-list')).to.exist;
 	});
 });
